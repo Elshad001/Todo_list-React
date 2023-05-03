@@ -1,38 +1,357 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&family=Playball&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (min-width:520px)
+{
+    body
+{
+    background-color: rgb(29, 29, 36);
+}
+.todo-app
+{
+    width:500px;
+    height:650px;
+    margin:50px auto;
+    border-radius:10px;
+    background:linear-gradient(to bottom,#88dcf6,#86adbe,#5db6f2);
+}
+.todo-app .todo-app-title
+{
+    width:100%;
+    height:50px;
+    padding:10px 100px;
+    font-family:'Alkatra', cursive;
+    font-size:35px;
+    font-weight: 500;
+    text-align:center;
+    color:#333;
+}
+.todo-app .todo-form form
+{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:100px;
+    margin-top:30px;
+    padding:10px 50px;
+}
+.todo-app .todo-form .todo-inp
+{
+    width:300px;
+    height:38px;
+    border:none;
+    border-radius:5px;
+    text-align: right;
+    padding-right:20px;
+}
+.todo-app .todo-form .add-btn
+{
+    width:50px;
+    height:38px;
+    border: none;
+    border-radius:5px;
+    background-color: #30e32d;
+    font-family: sans-serif;
+    font-size:18px;
+    font-weight: 500;
+    text-align:center;
+    color:#333;
+}
+.todo-app .todo-form .add-btn:hover
+{
+    background-color: #0d5f0c;
+    color:#fff;
+}
+.todo-app .todo-list
+{
+   
+    width:400px;
+    height:400px;
+    margin:0 auto;
+    padding:10px 20px;
+    background-color: #f9ecf9;
+    border-radius:5px;
+    overflow-y: scroll;
+    scrollbar-width:5px;
+    scrollbar-color: #20caf0 #ece4e4;
+    scrollbar-gutter: 50px;
+}
+.todo-app .todo-list .todo
+{
+    display: flex;
+    justify-content: space-between;
+}
+.todo-app .todo-list ul
+{
+    list-style: none;
+}
+.todo-app .todo-list ul li
+{
+    
+    width:100%;
+    height:auto;
+    padding:0 10px;
+    border-bottom:2px solid #5db6f2;
+   
+}
+.todo-app .todo-list ul li:hover
+{
+    background-color: #c8cfcb;
+}
+.todo-app .todo-list ul .todo-title
+{
+    width:250px;
+    height:auto;
+    padding:8px 15px;
+    font-family:'Playball', cursive;
+    font-size:20px;
+    font-weight:400;
+    color:#333;
+    word-break: break-all;
+}
+.todo-app .todo-list ul .todo-title-edit
+{
+    width:250px;
+    height:auto;
+    padding:8px 15px;
+    font-family:'Playball', cursive;
+    font-size:20px;
+    font-weight:400;
+    color:#09bb56;
+    word-break: break-all;
+    text-decoration: line-through;
+}
+.todo span
+{
+    display: flex;
+    justify-content: space-between;
+}
+.del-icon
+{
+    margin-top:10px;
+    color:#f52e0b;
+    font-size:28px;
+   
+}
+.edit-icon
+{
+    margin-top:5px;
+    margin-right:20px;
+    color:#260bf5;
+    font-size:41px;
+   
+}
+.todo-total
+{
+    width:100%;
+    height:50px;
+    padding:20px 50px;
+    font-family:'Playball', cursive;
+    font-size:25px;
+    font-weight:400;
+    color:#333
+}
+.update-imp
+{
+    width:250px;
+    height:38px;
+    margin-left:10px;
+    padding-right:30px;
+    border:none;
+    background-color: transparent;
+    text-align:right;
+    font-family:'Playball', cursive;
+    font-size:20px;
+    font-weight:400;
+    color:#333;
+    word-break: break-all;
+}
+.update-btn
+{
+    width:38px;
+    height:22px;
+    margin-top:8px;
+    border: none;
+    border-radius:5px;
+    background-color: #0cee6e;
+    font-size:10px;
+    font-weight:500;
+    color:#333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width:519px){
+    body
+{
+    background-color: rgb(29, 29, 36);
 }
-
-.App-link {
-  color: #61dafb;
+.todo-app
+{
+    width:400px;
+    height:650px;
+    margin:50px auto;
+    border-radius:10px;
+    background:linear-gradient(to bottom,#88dcf6,#86adbe,#5db6f2);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-app .todo-app-title
+{
+    width:100%;
+    height:50px;
+    padding:10px 100px;
+    font-family:'Alkatra', cursive;
+    font-size:35px;
+    font-weight: 500;
+    text-align:center;
+    color:#333;
+}
+.todo-app .todo-form form
+{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:100px;
+    margin-top:30px;
+    padding:10px 50px;
+}
+.todo-app .todo-form .todo-inp
+{
+    width:220px;
+    height:38px;
+    border:none;
+    border-radius:5px;
+    text-align: right;
+    padding-right:20px;
+}
+.todo-app .todo-form .add-btn
+{
+    width:50px;
+    height:38px;
+    border: none;
+    border-radius:5px;
+    background-color: #30e32d;
+    font-family: sans-serif;
+    font-size:18px;
+    font-weight: 500;
+    text-align:center;
+    color:#333;
+}
+.todo-app .todo-form .add-btn:hover
+{
+    background-color: #0d5f0c;
+    color:#fff;
+}
+.todo-app .todo-list
+{
+   
+    width:400px;
+    height:400px;
+    margin:0 auto;
+    padding:10px 20px;
+    background-color: #f9ecf9;
+    border-radius:5px;
+    overflow-y: scroll;
+}
+.todo-app .todo-list .todo
+{
+    display: flex;
+    justify-content: space-between;
+}
+.todo-app .todo-list ul
+{
+    list-style: none;
+}
+.todo-app .todo-list ul li
+{
+    
+    width:100%;
+    height:auto;
+    padding:0 10px;
+    border-bottom:2px solid #5db6f2;
+   
+}
+.todo-app .todo-list ul .todo-title
+{
+    width:250px;
+    height:auto;
+    padding:8px 15px;
+    font-family:'Playball', cursive;
+    font-size:20px;
+    font-weight:400;
+    color:#333;
+    word-break: break-all;
+}
+.todo-app .todo-list ul .todo-title-edit
+{
+    width:250px;
+    height:auto;
+    padding:8px 15px;
+    font-family:'Playball', cursive;
+    font-size:20px;
+    font-weight:400;
+    color:#06d626;
+    word-break: break-all;
+    text-decoration: line-through;
+}
+.todo span
+{
+    display: flex;
+    justify-content: space-between;
+}
+.del-icon
+{
+    margin-top:10px;
+    color:#f52e0b;
+    font-size:28px;
+   
+}
+.edit-icon
+{
+    margin-top:5px;
+    margin-right:20px;
+    color:#260bf5;
+    font-size:41px;
+   
+}
+.todo-total
+{
+    width:100%;
+    height:50px;
+    padding:20px 50px;
+    font-family:'Playball', cursive;
+    font-size:25px;
+    font-weight:400;
+    color:#333
+}
+.update-imp
+{
+    width:250px;
+    height:38px;
+    margin-left:10px;
+    padding-right:30px;
+    border:none;
+    background-color: transparent;
+    text-align:right;
+    font-family:'Playball', cursive;
+    font-size:20px;
+    font-weight:400;
+    color:#333;
+    word-break: break-all;
+}
+.update-btn
+{
+    width:50px;
+    height:25px;
+    margin-top:5px;
+    margin-left:10px;
+    border: none;
+    border-radius:5px;
+    background-color: #30f080;
+    color:#333;
+}
 }
